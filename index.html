@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portafolio | Diseñador Gráfico</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<header>
+  <nav class="nav">
+    <div class="logo">
+      <img src="imagenes/Logo pagina wed.png" alt="Logo">
+      <span>Yampier Sánchez</span>
+    </div>
+
+    <ul>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#about">Sobre mí</a></li>
+      <li><a href="#portafolio">Portafolio</a></li>
+    </ul>
+
+    <a class="btn" href="https://wa.me/573103052216" target="_blank">Hablemos</a>
+  </nav>
+</header>
+
+<section class="hero reveal">
+  <div>
+    <span class="badge">Diseñador Gráfico & Multimedia</span>
+
+    <h1>
+      Diseños que <span>conectan marcas</span>
+    </h1>
+
+    <p>
+      Branding, diseño web, UI/UX y contenido digital enfocado en resultados reales 
+      y una estética profesional. Desarrollo soluciones visuales estratégicas que fortalecen la 
+      identidad de las marcas, mejoran la experiencia del usuario y generan conexiones auténticas 
+      con las personas. Diseño que conecta marcas.
+    </p>
+
+    <div class="hero-actions">
+      <a class="btn" href="https://wa.me/573103052216" target="_blank">
+        Trabajemos juntos
+      </a>
+    </div>
+
+    <div class="social">
+      <a href="https://instagram.com/yampier_sanchez_perez" target="_blank">IG</a>
+      <a href="https://wa.me/573103052216" target="_blank">WA</a>
+    </div>
+  </div>
+
+  <div class="hero-img">
+    <img src="imagenes/Hero.jpg" alt="Hero">
+  </div>
+</section>
+
+<section id="about" class="reveal">
+  <h2>Sobre mí</h2>
+
+  <div class="grid">
+    <div class="about-img">
+      <img src="imagenes/perfil.png" alt="Perfil">
+    </div>
+
+    <div>
+      <p>
+        Soy diseñador gráfico y multimedia enfocado en crear identidades visuales modernas, 
+        experiencias digitales atractivas y contenido visual que conecta con las personas. 
+        Me especializo en transformar ideas en soluciones visuales claras, funcionales y estéticamente impactantes, 
+        combinando creatividad, estrategia y tecnología para aportar valor real a marcas y proyectos digitales.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="portafolio" class="reveal">
+  <h2>Proyectos Destacados</h2>
+
+  <div class="grid">
+    <a class="work" href="https://drive.google.com/drive/folders/1zHn6JDRDq0MocQnv_6I6Lt9KGDHoDagu" target="_blank">
+      <img src="imagenes/branding.png" alt="Branding">
+      <div class="info">
+        <strong>Branding</strong>
+        <div class="tag">Identidad visual</div>
+      </div>
+    </a>
+
+    <a class="work" href="https://drive.google.com/drive/folders/1zHn6JDRDq0MocQnv_6I6Lt9KGDHoDagu" target="_blank">
+      <img src="imagenes/Diseño wed.png" alt="Diseño Web">
+      <div class="info">
+        <strong>Diseño Web</strong>
+        <div class="tag">UI / UX</div>
+      </div>
+    </a>
+
+    <a class="work" href="https://drive.google.com/drive/folders/1zHn6JDRDq0MocQnv_6I6Lt9KGDHoDagu" target="_blank">
+      <img src="imagenes/experiencias.png" alt="Contenido Digital">
+      <div class="info">
+        <strong>Contenido Digital</strong>
+        <div class="tag">Video</div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<footer>
+  © 2026 Yampier Sanchez Perez · Diseñador Gráfico & Multimedia
+</footer>
+
+<script>
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+  });
+}, { threshold: 0.15 });
+
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
